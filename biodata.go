@@ -14,7 +14,7 @@ type Person struct {
 }
 
 func (p Person) Biodata() string {
-	return fmt.Sprintf("biodata \n ID : %d \n nama : %s \n alamat : %s \n pekerjaan : %s \n alasan : %s", p.ID, p.Name, p.Alamat, p.Pekerjaan, p.Alasan)
+	return fmt.Sprintf("\n ID : %d \n nama : %s \n alamat : %s \n pekerjaan : %s \n alasan : %s", p.ID, p.Name, p.Alamat, p.Pekerjaan, p.Alasan)
 }
 
 func main() {
@@ -25,9 +25,8 @@ func main() {
 
 	for i, member := range memberList {
 		if input == member {
-			fmt.Println("Member found at index", i)
 			person := Person{
-				ID:        i + 1,
+				ID:        i,
 				Name:      input,
 				Alamat:    "Jakarta",
 				Pekerjaan: "Developer",
