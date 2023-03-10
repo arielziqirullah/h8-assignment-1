@@ -35,7 +35,6 @@ func main() {
 			}
 			fmt.Println(person.Biodata())
 		}
-		continue
 	}
 
 }
